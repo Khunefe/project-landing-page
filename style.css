@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
@@ -15,7 +16,6 @@ a {
 
 .header {
     background-color: #1f2937;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 20px 400px;
     display: flex;
     justify-content: space-between;
@@ -50,10 +50,10 @@ a {
 
 .welcome-right {
     max-width: 500px;
+    max-height: 300px;
 }
 
 .welcome-left img{
-    /* max-width: 650px; */
     max-height: 300px;
 }
 
@@ -72,3 +72,80 @@ a {
     color: #f9faf8;
     font-size: 14px;
 }
+
+/* INFORMATION SECTION */
+
+.information-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 400px;
+    align-items: center;
+}
+
+.information-section h2 {
+    margin: 0;
+    padding: 70px 0px;
+    padding-bottom: 50px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.cards {
+    display: flex;
+    gap: 40px;
+}
+
+.card-item {
+    max-width: 200px;
+}
+
+.cards img {
+    max-width: 200px;
+    height: 200px;
+    border: 4px solid #3882F6;
+    border-radius: 10px;
+}
+
+.cards p {
+    font-size: 18px;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial {
+    background-color: #e5e7eb;
+    padding: 0px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-top {
+    width: 920px;
+}
+
+.testimonial-top p {
+    margin-top: 80px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.testimonial-bottom {
+    width: 920px;
+    text-align: end;
+}
+
+.testimonial-bottom h3 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-weight: 900;
+}
+

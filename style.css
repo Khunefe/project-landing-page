@@ -18,6 +18,7 @@ a {
     background-color: #1f2937;
     padding: 20px 400px;
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
 }
@@ -26,7 +27,6 @@ a {
     display: flex;
     gap: 20px;
 }
-
 
 .header-logo {
     font-size: 24px;
@@ -51,6 +51,10 @@ a {
 .welcome-right {
     max-width: 500px;
     max-height: 300px;
+}
+
+.welcome-right p {
+    min-width: 250px;
 }
 
 .welcome-left img{
@@ -94,6 +98,7 @@ a {
 .cards {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .card-item {
@@ -125,7 +130,8 @@ a {
 }
 
 .testimonial-top {
-    width: 920px;
+    max-width: 920px;
+    flex: 1;
 }
 
 .testimonial-top p {
@@ -138,8 +144,8 @@ a {
 }
 
 .testimonial-bottom {
-    width: 920px;
-    text-align: end;
+    max-width: 920px;
+    align-self: end;
 }
 
 .testimonial-bottom h3 {
@@ -152,6 +158,7 @@ a {
 /* CALL TO ACTION SECTION */
 
 .call-to-action {
+    min-width: 290px;
     background-color: #3882f6;
     color: white;
     margin: 90px 400px;
@@ -159,13 +166,12 @@ a {
     border-radius: 7px;
     display: flex;
     justify-content: space-around;
+    flex: 1;
 }
 
 .call-to-action h2, p {
     margin: 0;
 }
-
-/* .call-to-action-text  */
 
 .call-to-action-text {
     padding: 30px;
@@ -178,4 +184,16 @@ a {
     border-radius: 8px;
     margin: 30px 0px;
     padding: 5px 55px;
+}
+
+
+/* FOOTER SECTION */
+
+.footer {
+    background-color: #1f2937;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-size: 14px;
 }
